@@ -6,4 +6,6 @@ This py script script1.py has 3 methods:
 2. detect_face : This method takes an image as input and tries to find out all possible faces in it.
 3. video_capture : This method tries to take images from webcam and show it in screen in intervals untill 'q' for quit is pressed.
 
-Py modules used : cv2, glob
+Py modules used : cv2, glob, bokeh
+
+Script :  Motion_Detector.py
