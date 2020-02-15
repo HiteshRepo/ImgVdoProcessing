@@ -12,6 +12,9 @@ def video_capture():
 
     video=cv2.VideoCapture(0) # captures video from webcam
     
+#    print(video.isOpened()) # False
+#    print(video.read()) # (False, None)
+    
     #video=cv2.VideoCapture("Rain.mp4") 
     
     a = 1
@@ -20,7 +23,7 @@ def video_capture():
         a = a+1
         check, frame = video.read()
         print(check)
-        print(frame)
+        print(frame.sum())
         
         gray_image = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         
@@ -76,7 +79,7 @@ def resize_images():
      
 #resize_images()
 #detect_face()
-#video_capture()
+video_capture()
 
 
 #img = cv2.imread("galaxy.jpg",0)
